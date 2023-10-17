@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Variables Project Clone
+    </title>
+  </head>
+  <body>
+    <p>
+      Cart Quantity
+    </p>
+    <button class="show-quantity-button" onclick="
+      console.log(`Cart quantity: ${quantity}`)">
+      Show Quantity
+    </button>
+    <button onclick="
+      quantity = quantity + 1;
+      if(quantity <=10)
+      {
+        console.log(`Cart quantity: ${quantity}`) ;
+      }
+      else 
+      {
+        quantity = quantity -1;
+        alert('the Cart is full') ;
+      }
+      ">
+      Add to Cart
+    </button>
+    <button onclick="
+      quantity = quantity + 2;
+      if(quantity <=10)
+      {
+        console.log(`Cart quantity: ${quantity}`) ;
+      }
+      else 
+      {
+        quantity = quantity -2;
+        alert('the Cart is full') ;
+      }
+
+     ">
+      +2
+    </button>
+    <button onclick="
+      quantity = quantity + 3;
+      if(quantity <=10)
+      {
+        console.log(`Cart quantity: ${quantity}`) ;
+      }
+      else 
+      {
+        quantity = quantity -3;
+        alert('the Cart is full') ;
+      }
+
+     "
+   >
+      +3
+    </button>
+    <button onclick="
+      console.log('Cart was reset.');
+      quantity = 0;
+      console.log(`Cart quantity: ${quantity}`)">
+      Reset Cart
+    </button>
+  <script>
+   let quantity =0;
+  </script>
+  </body>
+</html>
