@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Functions exercise
+    </title>
+  </head>
+  <body>
+    <script>
+      function convertToFahrenheit(celsius){
+        let fahrenheit = 0;
+        fahrenheit = (celsius * 9/5) + 32
+        return fahrenheit;
+      }
+      const answer = convertToFahrenheit(25);
+      console.log(answer);
+
+
+        function convertToCelsius(fahrenheit){
+          let celsius =0;
+          celsius =(fahrenheit-32)*5/9
+          return celsius;
+        }
+        const answer2 = convertToCelsius(86);
+        console.log(answer2);
+
+         
+        function convertTemperature(temperature,temperatureType)
+        {
+          let answer = 0;
+          if(temperatureType === 'C')
+          { 
+            answer =convertToFahrenheit(temperature);
+          }
+          else if (temperatureType === 'F')
+          {
+            answer = convertToCelsius(temperature);
+          }
+          return answer;
+        }
+        const answer3 = convertTemperature(212,'F');
+        console.log(answer3);
+
+
+
+    </script>
+  </body>
+</html>
