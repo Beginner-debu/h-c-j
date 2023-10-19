@@ -41,13 +41,16 @@
       function calculateCartQuantity(value){
         if(cartQuantity + value >10){
           alert('The cart is full');
+          return;
         }
         else if (cartQuantity + value <0){
           alert('Not enough cart items');
+          return;
         }
         else{
           cartQuantity += value;
           console.log(`Cart Quantity: ${cartQuantity}`);
+          return;
         }
       }
     </script>
