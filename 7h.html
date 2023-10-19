@@ -1,80 +1,55 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Cart Quantity</title>
+    <title>
+      Amazon website small feature
+    </title>
   </head>
   <body>
+    <p>
+      Cart feature Amazon
+    </p>
     <button onclick="
-      updateCartQuantity(0);
-    ">Show Quantity</button>
-
+      calculateCartQuantity(0);">Show quantity</button>
     <button onclick="
-   
-      updateCartQuantity(1);
-    ">Add to Cart</button>
-
+      calculateCartQuantity(1);">Add to cart</button>
     <button onclick="
-      updateCartQuantity(2);
-    ">+2</button>
-
+    calculateCartQuantity(2);">2</button>
     <button onclick="
-      updateCartQuantity(3);
-    ">+3</button>
-
+    calculateCartQuantity(3);">3</button>
     <button onclick="
-    
-      updateCartQuantity(4);
-    ">+4</button>
-
+    calculateCartQuantity(4);">4</button>
     <button onclick="
-    
-      updateCartQuantity(5);
-    ">+5</button>
-
-    <!-- vvv This code was changed. vvv -->
+    calculateCartQuantity(5);">5</button>
     <button onclick="
-      cartQuantity--;
-      if(cartQuantity < 0)
-      decreaseCartQuantity(1);
-     
-      ">Remove from cart</button>
-
+    calculateCartQuantity(-1);">Remove from cart</button>
     <button onclick="
-    decreaseCartQuantity(2);
-      
-    ">-2</button>
-
+    calculateCartQuantity(-2);">-2</button>
     <button onclick="
-      decreaseCartQuantity(3);
-    ">-3</button>
-    <!-- ^^^ This code was changed. ^^^ -->
-
+    calculateCartQuantity(-3);">-3</button>
     <button onclick="
+    calculateCartQuantity(-4);">-4</button>
+    <button onclick="
+    calculateCartQuantity(-5);">-5</button>
+    <button onclick ="
       cartQuantity = 0;
-      console.log('Cart was reset.');
-      console.log(`Cart quantity: ${cartQuantity}`);
-    ">Reset Cart</button>
-
+      console.log('the cart was reset')
+      console.log(`Cart Quantity: ${cartQuantity}`);
+      ">Reset Cart</button>
     <script>
       let cartQuantity = 0;
-          function updateCartQuantity(numToAdd){
-            cartQuantity += numToAdd;
-            console.log(`Cart quantity: ${cartQuantity}`);          
-          }
-          function decreaseCartQuantity(numToSubstract)
-          {
-            cartQuantity -= numToSubstract;
-            if (cartQuantity < 0 ){
-              cartQuantity += numToSubstract;
-              alert('not enough items in the cart')
-            }
-            else
-            {
-              console.log(`Cart quantity: ${cartQuantity}`);
-            }
-          }
-          
-      
+      function calculateCartQuantity(value){
+        if(cartQuantity + value >10){
+          alert('The cart is full');
+        }
+        else if (cartQuantity + value <0){
+          alert('Not enough cart items');
+        }
+        else{
+          cartQuantity += value;
+          console.log(`Cart Quantity: ${cartQuantity}`);
+        }
+      }
     </script>
   </body>
 </html>
