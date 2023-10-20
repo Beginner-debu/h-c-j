@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Head Or Tails Game
+    </title>
+  </head>
+  <body>
+    <p>
+      Guess(heads or tails)
+      (the coin has already flipped)
+    </p>
+    <button onclick="
+      playGame('heads');
+    "> heads</button>
+
+    <button onclick="
+    playGame('tails');
+    ">
+      tails
+    </button>
+    <script>
+      let score = {
+        wins: 0 ,
+        losses: 0
+      
+
+      };
+      score = JSON.parse(localStorage.getItem('score'));
+      function playGame(guess){
+        const randomNumber = Math.random();
+        let producedResult = '';
+        let output = '';
+        if(randomNumber >=0 && randomNumber < 0.5)
+        {
+          producedResult = 'heads';
+        }
+        else if (randomNumber >= 0.5 && randomNumber <1 )
+        {
+          producedResult ='tails';
+        }
+
+
+      output = producedResult === guess? 'You win!' : 'You lose!';
+
+      if(output === 'You win!'){
+        score.wins++;
+      }
+      else{
+        score.losses++;
+      }
+
+      localStorage.setItem('score',JSON.stringify(score));
+      alert(`the produced result is ${producedResult}.${output}
+wins: ${score.wins}, losses: ${score.losses}`);
+      
+      }
+    </script>
+  </body>
+</html>

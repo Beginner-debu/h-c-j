@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Object Exercise
+    </title>
+  </head>
+  <body>
+    <script>
+      const product = {
+        name: 'basketball',
+        price: 2095 ,
+        ['delivery-time']: '3 days',
+        method: function comparePrice(product1,product2){
+          const result = product1.price<product2.price? product1:product2;
+          return result;
+        }
+      };
+
+      const product1 = {
+        name: 'football',
+        price: 209,
+        'delivery-time': '15 days'
+      };
+      const product2 = {
+        name: 'baseball',
+        price: 2008,
+        'delivery-time': '19 days'
+      };
+      console.log(product);
+
+      product.price = 2095 + 500;
+      console.log(product);
+
+     console.log((product.method(product1,product2)));
+
+
+
+
+    </script>
+  </body>
+</html>

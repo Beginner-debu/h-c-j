@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Object Exercise 
+    </title>
+  </head>
+  <body>
+    <script>
+      const product = {
+        name: 'basketball',
+        price:2095,
+       /* method: function isSameProduct(product1,product2){
+          if(product1.name === product2.name && product1.price === product2.price){
+            return true;
+          }
+          else{
+            return false;
+          }
+        }*/
+        isSameProduct(product1,product2) {
+          if(product1.name === product2.name && product1.price === product2.price){
+            return true;
+          }
+          else{
+            return false;
+          }
+        }
+      };
+      const product2 = {
+        name: 'basketbal',
+        price:2095
+      }
+      const product3 = {
+        name: 'basketball',
+        price:2095
+      }
+      console.log(product.isSameProduct(product2,product3));
+
+      console.log("Good Morning" .toLowerCase());
+      console.log('test'.repeat(5));
+    </script>
+  </body>
+</html>
