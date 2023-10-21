@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM</title>
+  </head>
+  <body>
+    <button>
+      hello
+    </button>
+    <button class="js-button">
+      Second button
+    </button>
+    <p>
+      Amazon Shipping Calculator
+    </p>
+    <p>
+      Orders under $40 = +$10 shipping.
+    </p>
+    <p>
+      Orders over $40 = FREE shipping.
+    </p>
+    <input class="calculation-bar"  placeholder="Cost of order" onkeydown="
+      if(event.key === 'Enter'){
+        calculateTotal();
+      }">
+    <button onclick="
+      calculateTotal();
+        ">Calculate</button>
+    <p class="js-result"></p>
+    <script>
+      function calculateTotal(){
+        let inputElement = document.querySelector('.calculation-bar');
+      let cost = Number(inputElement.value);
+
+      if(cost < 40){
+        cost += 10;
+      }
+      document.querySelector('.js-result')
+        .innerHTML = `$${cost}` ;
+      }
+    
+    
+
+
+
+      /*
+      console.log(document.querySelector('button'));
+      document.querySelector('button')
+        .innerHTML = 'Changed';
+
+      const buttonElement = document.querySelector('.js-button');
+      console.log(buttonElement);
+      */
+
+    
+
+
+
+
+
+
+
+      /*
+      console.log(document.title);
+      document.title = 'changed';
+
+      console.log(document.body);
+      console.log(typeof document.body);
+
+      console.log(document.body.innerHTML);
+      document.body.innerHTML = '<button>Good Job!</button>';
+      */
+
+
+
+
+
+
+
+     /*
+     document.body.innerHTML = 'Good bye!';
+     document.title = 'syafhdjfh';
+     */
+    </script>
+  </body>
+</html>
