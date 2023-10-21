@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Amazon website small feature
+    </title>
+  </head>
+  <body>
+    <button onclick="
+      calculateCartQuantity(0);">Show quantity</button>
+    <button onclick="
+      calculateCartQuantity(1);">Add to cart</button>
+    <button onclick="
+    calculateCartQuantity(2);">2</button>
+    <button onclick="
+    calculateCartQuantity(3);">3</button>
+    <button onclick="
+    calculateCartQuantity(4);">4</button>
+    <button onclick="
+    calculateCartQuantity(5);">5</button>
+    <button onclick="
+    calculateCartQuantity(-1);">Remove from cart</button>
+    <button onclick="
+    calculateCartQuantity(-2);">-2</button>
+    <button onclick="
+    calculateCartQuantity(-3);">-3</button>
+    <button onclick="
+    calculateCartQuantity(-4);">-4</button>
+    <button onclick="
+    calculateCartQuantity(-5);">-5</button>
+    <button onclick ="
+      cartQuantity = 0;
+      document.querySelector('p')
+        .innerHTML = `The cart was reset.
+          Cart quantity: ${cartQuantity}`;
+      ">Reset Cart</button>
+      <p></p>
+    <script>
+      let cartQuantity = 0;
+      function calculateCartQuantity(value){
+        if(cartQuantity + value >10){
+          alert('The cart is full');
+          return;
+        }
+        else if (cartQuantity + value <0){
+          alert('Not enough cart items');
+          return;
+        }
+        else{
+          cartQuantity += value;
+          document.querySelector('p')
+            .innerHTML = `Cart quantity: ${cartQuantity}` ;
+          return;
+        }
+      }
+    </script>
+  </body>
+</html>

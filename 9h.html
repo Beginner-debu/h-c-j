@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      DOM Exercise
+    </title>
+  </head>
+  <body>
+    <input class="search-bar" type="text" placeholder="Type Something"
+    onkeydown="
+    document.querySelector('p')
+      .innerHTML += event.key;
+     console.log(event.key); ">
+    <p></p>
+    <script>
+
+    </script>
+  </body>
+</html>
