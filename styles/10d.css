@@ -1,0 +1,12 @@
+.button1{
+  background-color:rgb(220, 219, 219);
+  border:none;
+  font-size:14px;
+  padding:10px 15px;
+  border-radius:5px;
+  cursor:pointer;
+}
+.on-click{
+  background-color:black;
+  color:white;
+}
