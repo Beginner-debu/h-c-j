@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Arrays and Loops Exercise
+    </title>
+  </head>
+  <body>
+    <script>
+      const nums = [10,20,30]
+      nums[2] = 99;
+      console.log(nums);
+
+      function getLastValueArray(array){
+        return(array[array.length - 1]);
+      }
+
+      console.log(getLastValueArray(['hi' , 'hello' , 'good']));
+
+
+      function arraySwap(array){
+        let temp = 0;
+        temp = array[0];
+        array[0] = array[array.length - 1];
+        array[array.length - 1] = temp;
+        console.log(array);
+      }
+
+      arraySwap([1,20,22,24,5]);
+      arraySwap(['hi','hello','good']);
+
+
+      for(let i = 0;i <= 10;i+=2){
+        console.log(i);
+      }
+
+      for(let i = 5;i >= 0;i--){
+        console.log(i);
+      }
+
+      let i = 0;
+      while(i <= 10) {
+        console.log(i);
+        i+=2;
+      }
+
+      let j = 5;
+      while(j >= 0){
+        console.log(j);
+        j--;
+      }
+
+      const array2 = [1,2,3];
+      const array3 = [];
+      for(let i = 0;i < array2.length ;i++){
+        array3.push(array2[i] + 1);
+      }
+      console.log(array3);
+
+      function addOne(array){
+        const array3 = [];
+        for(let i = 0;i < array.length ;i++){
+          array3.push(array[i] + 1);
+        }
+        return array3;
+      }
+
+      console.log(addOne([1,2,3]));
+      console.log(addOne([-2, -1, 0, 99]));
+    </script>
+  </body>
+</html>
