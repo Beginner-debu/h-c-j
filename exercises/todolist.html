@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Todolist</title>
+  </head>
+  <body>
+    <p>
+      Todo List Practice 1
+    </p>
+    <input class="js-input-name" type ="text" placeholder="Todo name">
+    <button onclick="
+      addToArray();
+    ">Add</button>
+    <div class="todo-container"></div>
+
+
+
+
+
+
+    <script>
+      const inputArray = [];
+
+      renderElements();
+      
+      function renderElements(){
+        let total = '';
+        for(let i  = 0;i < inputArray.length;i++){
+          let element = inputArray[i];
+          const html = `<p>${element}</p>`;
+          total += html;
+        }
+        console.log(total);
+        document.querySelector('.todo-container')
+          .innerHTML = total;
+     }
+
+    
+
+      function addToArray(){
+        const input = document.querySelector('.js-input-name');
+          inputElement = input.value;
+          inputArray.push(inputElement);
+          console.log(inputArray);
+
+          input.value = ''
+
+          renderElements();
+      }
+
+
+    </script>
+  </body>
+</html>
