@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Arrays and Loops Exercise 2
+    </title>
+  </head>
+  <body>
+    <script>
+      console.log(findIndex(['green','red', 'blue', 'red'],'red'));
+      console.log(findIndex(['green','red', 'blue', 'red'],'yellow'));
+      function findIndex(array,word){
+        let count = 0;
+        for(let i = 0; i < array.length;i++){
+          const arrayElement = array[i];
+
+          if(arrayElement === word){
+            count++;
+            return i;
+          }
+        }
+        if(count === 0){
+          return -1;
+        }
+      }
+    </script>
+  </body>
+</html>

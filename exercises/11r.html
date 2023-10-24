@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Arrays And Loops Exercise 2
+    </title>
+  </head>
+  <body>
+    <script>
+      console.log(removeEggs(['egg','apple','egg','egg','ham']));
+
+      function removeEggs(foods){
+        const newArray = [];
+        for(let i  = 0; i < foods.length;i++){
+          const eachFood = foods[i];
+          if(eachFood === 'egg'){
+            continue;
+          }
+          else{
+            newArray.push(eachFood);
+          }
+        }
+        return newArray;
+      }
+    </script>
+  </body>
+</html>

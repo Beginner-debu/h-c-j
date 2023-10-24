@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Arrays And Loops Exercise 2
+    </title>
+  </head>
+  <body>
+    <script>
+      console.log(removeEggs(['egg','apple','egg','egg','ham']));
+    
+      function removeEggs(goods){
+        let foods= goods.slice(goods);
+        foods = foods.reverse(foods);
+        const newArray = [];
+        let count = 0;
+        for(let i  = 0; i < foods.length;i++){
+          const eachFood = foods[i];
+          if(eachFood === 'egg'){
+            count++;
+            if(count <= 2){
+              continue;
+            }
+            else{
+              newArray.push(eachFood);
+            }
+          }
+          else{
+            newArray.push(eachFood);
+          }
+        }
+        console.log(goods);
+        return newArray.reverse();
+       
+      }
+    </script>
+  </body>
+</html>

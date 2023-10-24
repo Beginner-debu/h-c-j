@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Arrays and Loops Exercise 2
+    </title>
+  </head>
+  <body>
+    <script>
+      console.log(findIndex(['green','red', 'blue', 'red'],'red'));
+      console.log(findIndex(['green','red', 'blue', 'red'],'yellow'));
+      function findIndex(array,word){
+        let count = 0;
+        for(let i = 0; i < array.length;i++){
+          const arrayElement = array[i];
+
+          if(arrayElement === word){
+            count++;
+            return i;
+          }
+        } 
+        if(count === 0){
+          return -1;
+        }
+      }
+      console.log(unique(['green','red', 'blue', 'red']));
+      function unique(array){
+        const newArray = [];
+        for(let i = 0;i < array.length;i++){
+          const arrayElement = array[i];
+          let index = findIndex(array,arrayElement);
+          if (index === null){
+            newAray.push(arrayElement);
+          }
+          else if(index === i){
+            newArray.push(arrayElement);
+          }
+        }
+        return newArray;
+      }
+      
+    </script>
+  </body>
+</html>

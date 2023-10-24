@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Arrays And Loops Exercise 2
+    </title>
+  </head>
+  <body>
+    <script>
+      const array = ['hello' ,'world' , 'search', 'good'];
+      countSearch(array);
+      countSearch(['not', 'found']);
+      countSearch(['feast','search','search']);
+
+      function countSearch(array){
+        let count = 0;
+        for(let i = 0; i < array.length; i++){
+          const element = array[i];
+          if(element === 'search'){
+            console.log(i);
+            count++
+            break;
+          }
+        }
+        if(count === 0){
+          console.log(-1);
+      }
+      }
+     
+    </script>
+  </body>
+</html>
