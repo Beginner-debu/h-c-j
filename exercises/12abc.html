@@ -1,0 +1,30 @@
+<!DOCTYPE html.>
+<html>
+  <head>
+    <title>
+      Advanced Functions Exercise
+    </title>
+  </head>
+  <body>
+    <button onclick="
+      setTimeout(function(){
+        document.querySelector('.js-start-button')
+          .innerHTML = 'Finished!'
+      },1000);" class="js-start-button">Start</button>
+    <script>
+      const add = function(){
+        console.log(2 + 3);
+      }
+      add();
+      add();
+
+      runTwice(add);
+      function runTwice(fun){
+        fun();
+        fun();
+      }
+      
+     
+    </script>
+  </body>
+</html>

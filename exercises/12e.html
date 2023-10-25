@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Advance Functions Exercise
+    </title>
+  </head>
+  <body>
+    <button class="js-add-to-cart-button" onclick="
+    if(!timeoutId){
+      timeoutId = setInterval(function(){
+      document.querySelector('.js-output')
+        .innerHTML = ''
+      },
+      2000);
+    }
+    else{
+      clearTimeout(timeoutId);
+      timeoutId = setInterval(function(){
+      document.querySelector('.js-output')
+        .innerHTML = ''
+      },
+      2000);
+
+    }
+       
+      
+       displayAdded(); 
+       ">
+      Add to cart
+    </button>
+    <p class="js-output"></p>
+    <script>
+      let timeoutId;
+     function displayAdded(){
+      document.querySelector('.js-output')
+      .innerHTML = 'Added';
+     }
+     
+    </script>
+  </body>
+</html>
