@@ -6,12 +6,10 @@
     </title>
   </head>
   <body>
-    <button onclick="
-      setTimeout(function(){
-        document.querySelector('.js-start-button')
-          .innerHTML = 'Finished!'
-      },1000);" class="js-start-button">Start</button>
+    <button  class="js-start-button">Start</button>
     <script>
+
+      /*
       const add = function(){
         console.log(2 + 3);
       }
@@ -23,7 +21,17 @@
         fun();
         fun();
       }
+      */
+      document.querySelector('.js-start-button')
+        .addEventListener('click',() => {
+          setTimeout(() => {
+          document.querySelector('.js-start-button')
+            .innerHTML = 'Finished!'
+      },1000);
       
+        }
+        
+        )
      
     </script>
   </body>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Advanced Functions Exercise 2
+    </title>
+  </head>
+  <body>
+    <script>
+      console.log(addNum([1, 2, 3], 2));
+      function addNum(array,num){
+        return array.map((value,index) =>  value + num);
+      }
+      console.log(addNum([-2, -1, 0, 99], 2));
+
+      function removeEgg(foods){
+           return foods.filter((value,index) => value !== 'egg' );
+      }
+
+      function removeEggs2(foods){
+        let count = 0;
+        return foods.filter((value) => {
+          if(value === 'egg'){
+            if(count < 2){
+              count++;
+              return false;
+              
+              
+            }
+            else{
+              return true;
+            }
+            
+          }
+          else{
+            return true;
+          }
+        });
+      }
+      console.log(removeEgg(['egg','apple','egg','egg','ham']));
+      console.log(removeEggs2(['egg','apple','egg','egg','ham']));
+    </script>
+  </body>
+</html>

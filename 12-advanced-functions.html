@@ -5,7 +5,23 @@
   </head>
   
   <body>
+    <button class="js-button">Click</button>
     <script>
+      /*
+      const buttonElement = document.querySelector('.js-button');
+
+      const eventListener = () => {
+        console.log('click');
+      };
+      buttonElement.addEventListener('click',eventListener);
+
+      buttonElement.removeEventListener('click',eventListener);
+     
+
+      buttonElement.addEventListener('click',() => {
+        console.log('click2');
+      })
+      */
       /*
      function greeeting(){
       console.log('hello');
@@ -53,18 +69,45 @@
 
     console.log('next line 2');
     */
-
+    /*
     [
       'make dinner',
       'wash clothes',
       'watch youtube'
-    ].forEach(function(value,index){
+    ].forEach((value,index) => {
       if(value === 'wash clothes'){
         return;
       }
       console.log(index);
       console.log(value);
     })
+
+      const arrowFunction = () => {
+        console.log('hello');
+      }
+      arrowFunction();
+
+      const oneParam = param => {
+        console.log(param + 1);
+      };
+      oneParam(2);
+
+      const oneline = () => 2 + 3; 
+      console.log(oneline());
+
+      const object = {
+        method: () => {
+
+        }
+        method(){
+
+        }
+      }
+      */
+
+      
+
+    
 
     </script>
   </body>
