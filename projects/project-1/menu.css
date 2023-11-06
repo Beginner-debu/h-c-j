@@ -1,0 +1,94 @@
+body{
+  background-color:rgb(244, 244, 244);
+  font-family:Arial;
+}
+.outer-container{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+h1{
+  letter-spacing:2px;
+  font-size:40px;
+  margin-bottom:15px;
+}
+.underline-container{
+  height:4px;
+  width:80px;
+  background-color:rgb(197, 157, 95);
+  margin-bottom:25px;
+}
+.buttons-container{
+  margin-bottom:60px;
+}
+
+.choices-btn{
+  padding:5px 15px;
+  font-size:16px;
+  margin-left:12px;
+  border-color:rgb(197, 157, 95) black black rgb(197, 157, 95);
+  border-style:solid;
+  border-radius:5px;
+  border-width:2px;
+  color:rgb(197, 157, 95);
+  background-color:rgb(244, 244, 244);
+  transition:background-color 0.35s,color 0.35s, border-color 0.35s;
+}
+.choices-btn:hover{
+  border:none black black none;
+  color:white;
+  background-color:rgb(197, 157, 95);
+  cursor:pointer;
+}
+.choices-btn:active{
+  border-color:black rgb(197, 157, 95) rgb(197, 157, 95) black;
+}
+.menu-container{
+  display:grid;
+  grid-template-columns: 600px 600px;
+  row-gap:40px;
+  column-gap:30px;
+}
+.item-container{
+  display:flex;
+}
+.image-container{
+  height:150px;
+  width:230px;
+  margin-right:20px;
+}
+.menu-image{
+  height:140px;
+  width:220px;
+  border:5px rgb(197, 157, 95) solid;
+  border-radius:5px;
+}
+p{
+  margin-top:0;
+  margin-bottom:0;
+}
+.price-container{
+  display:flex;
+  justify-content:space-between;
+}
+.price-container p{
+  letter-spacing: 3px;
+  font-weight:bold;
+}
+.item-name{
+  color:rgb(16, 42, 66);
+}
+.price{
+  color:rgb(197, 157, 95);
+}
+hr{
+  background-color:blue;
+  height:0.2px;
+  opacity:0.4;
+  margin-bottom:15px;
+}
+.information{
+  color:rgb(97, 125, 152);
+  font-size:18px;
+}
