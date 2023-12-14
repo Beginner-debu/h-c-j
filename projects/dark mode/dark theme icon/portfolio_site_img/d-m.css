@@ -1,0 +1,120 @@
+*{
+  margin:0;
+  padding:0;
+  font-family:Arial;
+}
+
+:root{
+  --primary-color:#edf2fc;
+  --secondary-color:gray;
+  --tertiary-color:black;
+  /*
+    --primary-color:black;
+  --secondary-color:white;
+  */
+}
+.dark-theme{
+  --primary-color:black;
+  --secondary-color:white;
+  --tertiary-color:white;
+}
+
+body{
+  background-color:var(--primary-color);
+}
+.outer-container{
+  width:84%;
+  margin:10px auto;
+}
+.outer-container header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.outer-container header img{
+  width:80px;
+  cursor:pointer;
+}
+.outer-container header ul{
+  list-style:none;
+  display:flex;
+}
+.outer-container header ul li{
+  margin:10px;
+}
+.outer-container header ul li a{
+  text-decoration:none;
+  color:var(--secondary-color);
+}
+.outer-container a:hover{
+  color:darkorange;
+}
+.outer-container article{
+  position:relative;
+  display:flex;
+  height:80vh;
+  margin-right:40px;
+}
+article .description-container{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  margin-top:100px;
+  width:50%;
+}
+article .description-container h1{
+  font-size:55px;
+  margin:20px 0;
+  color:var(--tertiary-color);
+}
+h1 span{
+  color:rgb(255, 140, 0);
+}
+article .description-container p{
+  color:var(--secondary-color);
+  margin-bottom:25px;
+}
+article .description-container button{
+  background-color:var(--tertiary-color);
+  color:var(--primary-color);
+  padding:8px 10px;
+  border:none;
+  border-radius:5px;
+  width:20%;
+  cursor:pointer;
+  margin-bottom:90px;
+}
+.description-container button:hover{
+  opacity:0.9;
+}
+article .image-container img{
+  position:absolute;
+  height:90%;
+  right:0;
+  bottom:20px;
+  transition:bottom 1s,right 1s;
+}
+article .image-container .girl-image{
+  right:40px;
+}
+.image-container:hover .default-image{
+  bottom:40px;
+}
+.image-container:hover .girl-image{
+  right:20px;
+}
+i{
+  margin-right:10px;
+  height:100%;
+  cursor:pointer;
+  font-size:25px;
+  color:var(--tertiary-color);
+}
+i:hover{
+  color:darkorange;
+}
+#moon{
+  width:30px;
+  cursor:pointer;
+}
+

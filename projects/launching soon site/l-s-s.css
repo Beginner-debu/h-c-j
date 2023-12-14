@@ -1,0 +1,68 @@
+*{
+  margin:0;
+  padding:0;
+  font-family:'Hedvig Letters Sans', sans-serif;
+  color:white;
+}
+.outer-container{
+  position:relative;
+  height:100vh;
+  background-image:url('./images-2/background.png');
+  background-size:cover;
+  background-position:center;
+  padding:10px 8%;
+}
+img.logo{
+  width:100px;
+  margin-bottom:190px;
+}
+h1.info{
+  margin:10px 0;
+  font-size:50px;
+}
+h1 span{
+  color:#ff3753;
+}
+.time-container{
+  display:flex;
+}
+.days-container,
+.hours-container,
+.minutes-container,
+.seconds-container{
+  margin-right:15px;
+}
+.time-container h1{
+  font-size:50px;
+}
+.time-container p{
+  font-size:14px;
+}
+button{
+  display:flex;
+  align-items:center;
+  margin-top:25px;
+  background:transparent;
+  border:1px solid white;
+  padding:10px 25px;
+}
+button img{
+  width:12px;
+  margin-left:6px;
+}
+img.animation{
+  position:absolute;
+  bottom:0;
+  right:10%;
+  animation:rocket 3s linear infinite;
+}
+@keyframes rocket {
+  from {
+   transform:translateY(0);
+   opacity:0;
+  }
+  to {
+   transform:translateY(-100%);
+   opacity:1;
+  }
+}

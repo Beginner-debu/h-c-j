@@ -1,0 +1,44 @@
+*{
+  margin:0;
+  padding:0;
+  font-family:Arial;
+}
+body{
+  background-color:#191919;
+}
+body .outer-container{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:15px;
+  margin-top:10%;
+}
+#back-button,
+#next-button{
+  height:60px;
+  cursor:pointer;
+}
+.image-container{
+  display:flex;
+  width:860px;
+  margin:0 20px;
+  overflow-x:scroll;
+}
+.image-container::-webkit-scrollbar{
+  display:none;
+}
+.image-container div{
+  display:grid;
+  grid-template-columns:auto auto auto;
+  column-gap:25px;
+  flex:none;
+}
+.image-container div img{
+  width:270px;
+  filter:grayscale(100%);
+  transition:transform 0.5s;
+}
+.image-container div img:hover{
+  filter:grayscale(0);
+  transform:scale(1.1);
+}

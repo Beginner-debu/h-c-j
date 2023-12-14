@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>MIXER</title>
+</head>
+
+<body>
+    <main>
+        <h1>Beat MIXER</h1>
+        <div class="controls">
+            <span class="play-btn pause">
+                <svg viewBox="0 0 11 14" class="play-icon" style="margin-left: 3px;">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g transform="translate(-753, -955)">
+                            <g transform="translate(100, 852)">
+                                <g transform="translate(646, 98)">
+                                    <g>
+                                        <rect x="0" y="0" width="24" height="24" />
+                                        <path
+                                            d="M7,6.82 L7,17.18 C7,17.97 7.87,18.45 8.54,18.02 L16.68,12.84 C17.3,12.45 17.3,11.55 16.68,11.15 L8.54,5.98 C7.87,5.55 7,6.03 7,6.82 Z"
+                                            fill="#1d1d1d" />
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </span>
+            <p class="clear">Clear</p>
+        </div>
+        <div class="clap">
+            <div class="sound">
+                <h2>Clap</h2>
+                <button data-track="0" class="volume clap-volume">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                        stroke-linejoin="round" class="volume-icon">
+                        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+                        <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07" />
+                    </svg>
+                </button>
+                <select name="clap-select" id="clap-select">
+                    <option value="./Sounds/clap-808.wav">Clap 808</option>
+                    <option value="./Sounds/clap-crushed.wav">Clap Crushed</option>
+                    <option value="./Sounds/clap-slapper.wav">Clap Slapper</option>
+                    <option value="./Sounds/clap-tape.wav">Clap Tape</option>
+                </select>
+            </div>
+            <div class="track clap-track">
+                <div class="pad clap-pad pad0"><span></span></div>
+                <div class="pad clap-pad pad1"><span></span></div>
+                <div class="pad clap-pad pad2"><span></span></div>
+                <div class="pad clap-pad pad3"><span></span></div>
+                <div class="pad clap-pad pad4"><span></span></div>
+                <div class="pad clap-pad pad5"><span></span></div>
+                <div class="pad clap-pad pad6"><span></span></div>
+                <div class="pad clap-pad pad7"><span></span></div>
+                <div class="pad clap-pad pad8"><span></span></div>
+                <div class="pad clap-pad pad9"><span></span></div>
+                <div class="pad clap-pad pad10"><span></span></div>
+                <div class="pad clap-pad pad11"><span></span></div>
+            </div>
+        </div>
+        <div class="hihat">
+            <div class="sound">
+                <h2>Hi-hat</h2>
+                <button data-track="1" class="volume hihat-volume">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                        stroke-linejoin="round" class="volume-icon">
+                        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+                        <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07" />
+                    </svg>
+                </button>
+                <select name="hihat-select" id="hihat-select">
+                    <option value="./Sounds/hihat-808.wav">Hi-hat 808</option>
+                    <option value="./Sounds/hihat-acoustic.wav">Hi-hat Acoustic</option>
+                    <option value="./Sounds/hihat-dist.wav">Hi-hat Dist</option>
+                    <option value="./Sounds/hihat-plain.wav">Hi-hat Plain</option>
+                </select>
+            </div>
+            <div class="track hihat-track">
+                <div class="pad hihat-pad pad0"><span></span></div>
+                <div class="pad hihat-pad pad1"><span></span></div>
+                <div class="pad hihat-pad pad2"><span></span></div>
+                <div class="pad hihat-pad pad3"><span></span></div>
+                <div class="pad hihat-pad pad4"><span></span></div>
+                <div class="pad hihat-pad pad5"><span></span></div>
+                <div class="pad hihat-pad pad6"><span></span></div>
+                <div class="pad hihat-pad pad7"><span></span></div>
+                <div class="pad hihat-pad pad8"><span></span></div>
+                <div class="pad hihat-pad pad9"><span></span></div>
+                <div class="pad hihat-pad pad10"><span></span></div>
+                <div class="pad hihat-pad pad11"><span></span></div>
+            </div>
+        </div>
+        <div class="kick">
+            <div class="sound">
+                <h2>Kick</h2>
+                <button data-track="2" class="volume kick-volume">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                        stroke-linejoin="round" class="volume-icon">
+                        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+                        <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07" />
+                    </svg>
+                </button>
+                <select name="kick-select" id="kick-select">
+                    <option value="./Sounds/kick-808.wav">Kick 808</option>
+                    <option value="./Sounds/kick-acoustic.wav">Kick Acoustic</option>
+                    <option value="./Sounds/kick-classic.wav">Kick Classic</option>
+                    <option value="./Sounds/kick-vinyl.wav">Kick Vinyl</option>
+                </select>
+            </div>
+            <div class="track kick-track">
+                <div class="pad kick-pad pad0"><span></span></div>
+                <div class="pad kick-pad pad1"><span></span></div>
+                <div class="pad kick-pad pad2"><span></span></div>
+                <div class="pad kick-pad pad3"><span></span></div>
+                <div class="pad kick-pad pad4"><span></span></div>
+                <div class="pad kick-pad pad5"><span></span></div>
+                <div class="pad kick-pad pad6"><span></span></div>
+                <div class="pad kick-pad pad7"><span></span></div>
+                <div class="pad kick-pad pad8"><span></span></div>
+                <div class="pad kick-pad pad9"><span></span></div>
+                <div class="pad kick-pad pad10"><span></span></div>
+                <div class="pad kick-pad pad11"><span></span></div>
+            </div>
+        </div>
+        <div class="snare">
+            <div class="sound">
+                <h2>Snare</h2>
+                <button data-track="3" class="volume snare-volume">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                        stroke-linejoin="round" class="volume-icon">
+                        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+                        <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07" />
+                    </svg>
+                </button>
+                <select name="snare-select" id="snare-select">
+                    <option value="./Sounds/snare-808.wav">Snare 808</option>
+                    <option value="./Sounds/snare-acoustic.wav">Snare Acoustic</option>
+                    <option value="./Sounds/snare-lofi.wav">Snare Lofi</option>
+                    <option value="./Sounds/snare-vinyl.wav">Snare Vinyl</option>
+                </select>
+            </div>
+            <div class="track snare-track">
+                <div class="pad snare-pad pad0"><span></span></div>
+                <div class="pad snare-pad pad1"><span></span></div>
+                <div class="pad snare-pad pad2"><span></span></div>
+                <div class="pad snare-pad pad3"><span></span></div>
+                <div class="pad snare-pad pad4"><span></span></div>
+                <div class="pad snare-pad pad5"><span></span></div>
+                <div class="pad snare-pad pad6"><span></span></div>
+                <div class="pad snare-pad pad7"><span></span></div>
+                <div class="pad snare-pad pad8"><span></span></div>
+                <div class="pad snare-pad pad9"><span></span></div>
+                <div class="pad snare-pad pad10"><span></span></div>
+                <div class="pad snare-pad pad11"><span></span></div>
+            </div>
+        </div>
+        <div class="controls">
+            <p class="tempo-info">
+                Tempo : <span class="speed-num">120</span> bpm
+            </p>
+            <input type="range" class="tempo-slider" min="30" max="300" value="120">
+        </div>
+        <audio src="./Sounds/clap-808.wav" class="clap-sound"></audio>
+        <audio src="./Sounds/hihat-808.wav" class="hihat-sound"></audio>
+        <audio src="./Sounds/kick-808.wav" class="kick-sound"></audio>
+        <audio src="./Sounds/snare-808.wav" class="snare-sound"></audio>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+        integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>

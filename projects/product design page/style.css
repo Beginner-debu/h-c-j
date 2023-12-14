@@ -1,0 +1,135 @@
+*{
+  margin:0;
+  padding:0;
+  font-family: 'Poppins', sans-serif;
+  font-weight:500;
+}
+.outer-container{
+  height:100vh;
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background-color:lightskyblue;
+}
+article{
+  display:flex;
+  align-items:center;
+  width:700px;
+  height:500px;
+}
+div.img-container{
+  position:relative;
+  width:350px;
+  height:100%;
+  background-color:black;
+  display:flex;
+  align-items:end;
+  box-shadow:5px 5px 10px rgba(0,0,0,0.15);
+}
+.img-container img{
+  height:430px;
+}
+.img-container .button-container{
+  position:absolute;
+  bottom:10px;
+  right:10px;
+  display:flex;
+  flex-direction:column;
+}
+.button-container button{
+  margin-top:8px;
+}
+.info-container{
+  height:94%;
+  width:100%;
+  background-color:white;
+  padding:35px;
+  box-sizing:border-box;
+  box-shadow:5px 5px 10px rgba(0,0,0,0.15);
+}
+.info-container h1{
+  margin-bottom:10px;
+  font-weight:800;
+}
+.info-container h2{
+  color:rgb(74, 74, 74);
+}
+.info-container p.discount,
+p.info{
+
+  margin:5px 0 20px 0;
+}
+.info-container p.discount{
+  font-size:14px;
+  color:rgb(129, 180, 27);
+  font-weight:bold;
+}
+.info-container p.info{
+  font-size:13px;
+  color:rgb(117, 115, 115);
+  margin-bottom:30px;
+}
+.preference-container div{
+  display:flex;
+  align-items:center;
+  margin-bottom:20px;
+}
+.preference-container p,
+.preference-container label{
+  color:rgb(151, 149, 149);
+  font-size:13px;
+}
+.preference-container label{
+  margin-right:35px;
+}
+.preference-container span{
+  margin-right:10px;
+  cursor:pointer;
+}
+.preference-container button,
+.img-container button{
+  height:13px;
+  width:13px;
+  border-radius:50%;
+  border:none;
+  box-shadow:2px 2px 10px rgba(0,0,0,0.15);
+  margin-right:8px;
+}
+button#red{
+  background-color:rgb(249, 13, 13);
+}
+button#green{
+  background-color:rgb(129, 180, 27);
+}
+button#purple{
+  background-color:purple;
+}
+button#pink{
+  background-color:lightpink;
+}
+.buy-button{
+  width:100%;
+  padding:5px 0;
+  border-radius:30px;
+  border:none;
+  margin-top:20px;
+}
+input{
+  border:none;
+  border-radius:30px;
+  width:30px;
+  color:rgb(151, 149, 149);
+  font-size:13px;
+  padding:2px;
+}
+.clicked{
+  background-color:blue;
+}
+.span-click{
+  color:blue;
+}
+.color-click{
+  outline:2px solid black;
+  transform:scale(1.2);
+}

@@ -1,0 +1,87 @@
+*{
+  margin:0;
+  padding:0;
+  font-family:Arial;
+  box-sizing:border-box;
+}
+body{
+  background-color:#161A30;
+}
+.outer-container{
+  background-color:white;
+  width:450px;
+  margin:10% auto;
+  border-radius:5px;
+  padding:15px;
+}
+.outer-container .icon-container{
+  background-color:white;
+  width:50px;
+  height:50px;
+  margin:-40px auto 25px auto;
+  padding:5px;
+  border-radius:50%;
+  text-align:center;
+  box-shadow:5px 5px 10px rgba(0,0,0,0.15);
+}
+.outer-container .icon-container i{
+  font-size:20px;
+  margin-top:9px;
+}
+.outer-container #name-container,
+#phone-container,
+#email-container,
+#message-container{
+  position:relative;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:17px;
+}
+#name-container label,
+#phone-container label,
+#email-container label,
+#message-container label{
+  font-size:13px;
+  width:100px;
+}
+#name-container input,
+#phone-container input,
+#email-container input,
+#message-container textarea{
+  flex:1;
+  padding:10px 0;
+  font-size:13px;
+  border:none;
+  border-bottom:2px solid rgb(221, 217, 217);
+}
+.outer-container span{
+  position:absolute;
+  font-size:13px;
+  right:5px;
+  color:red;
+}
+.outer-container span i{
+  color:green;
+}
+#message-container span{
+  bottom:14px;
+}
+.outer-container .button-container{
+  position:relative;
+  display:flex;
+  justify-content: center;
+  margin:10px 0;
+}
+.outer-container button{
+  background-color:black;
+  color:white;
+  border:none;
+  border-radius:5px;
+  padding:8px 35px;
+}
+.button-container span{
+  left:0;
+  bottom:-20px;
+  margin-bottom:10px;
+}

@@ -1,0 +1,71 @@
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  background-color:#bbc6fa;
+  display:flex;
+  justify-content:center;
+}
+.outer-container{
+  background-color:#fff;
+  width:560px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding:30px;
+  margin-top:10%;
+  border-radius:10px;
+  box-shadow:5px 10px 10px rgba(0,0,0,0.15);
+}
+.outer-container .line,.outer-container .author-container .sub-line{
+  background-color:rgb(63, 75, 238);
+  border-radius:20px;
+}
+.outer-container .line{
+  width:60px;
+  height:3px;
+  margin-bottom:20px;
+}
+.outer-container .author-container .sub-line{
+  width:15px;
+  height:1.5px;
+}
+
+blockquote{
+  margin-bottom:30px;
+}
+.outer-container .author-container{
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  vertical-align:center;
+  width:100%;
+  padding:10px;
+}
+.author-container span{
+  font-size:16px;
+  margin-left:5px;
+}
+.buttons-container{
+  display:flex;
+}
+.buttons-container .new-quote-button{
+  background-color:rgb(74, 74, 198);
+  color:white;
+  border:none;
+  border-radius:20px;
+  padding:10px 30px;
+  margin-right:10px;
+}
+.buttons-container .tweet-button{
+  background-color:#fff;
+  display:flex;
+  align-items:center;
+  padding:10px 30px;
+  border-radius:20px;
+  border:1px rgb(36, 144, 238) solid;
+}
+.buttons-container .tweet-button img{
+height:20px;
+}

@@ -1,0 +1,32 @@
+*{
+  margin:0;
+  padding:0;
+  font-family:Arial;
+}
+body{
+  width:100%;
+  min-height:100vh;
+  background-color:#250057;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.outer-container{
+  width:400px;
+  max-width:300px;
+  background-color:white;
+  border-radius:5px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding-right:10px;
+}
+.outer-container input{
+  border:none;
+  flex:1;
+  padding:10px;
+  font-size:17px;
+}
+.outer-container img{
+  height:20px;
+}

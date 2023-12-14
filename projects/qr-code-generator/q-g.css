@@ -1,0 +1,38 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial;
+}
+body{
+  background-color:	#424549;
+  display:flex;
+  justify-content:center;
+}
+.outer-container{
+background-color:white;
+padding:15px;
+padding-bottom:30px;
+border-radius:5px;
+width:350px;
+margin-top:17%;
+}
+.outer-container input{
+  border-radius:5px;
+  border:1px rgb(27, 27, 192) solid;
+  padding:10px 8px;
+  width:100%;
+  margin:25px 0;
+}
+.qr-container{
+  margin-left:25%;
+  margin-bottom:20px;
+  display:none;
+}
+.outer-container button{
+  background-color:rgb(85, 27, 192);
+  color:white;
+  width:100%;
+  padding:15px 50px;
+  border:none;
+}
